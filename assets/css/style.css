@@ -1,0 +1,47 @@
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 300px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.username {
+  display: flex;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register::before,
+.register::after {
+  content: '';
+  flex-grow: 1;
+  border: 1px solid black;
+}
+
+.register::after {
+  margin-left: 10px;
+}
+
+.register::before {
+  margin-right: 10px;
+}
+
+.heading {
+  text-align: center;
+}
