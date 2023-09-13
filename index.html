@@ -4,71 +4,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Forms Registration</title>
 </head>
 <body>
-  <header>
-    <article>
-      <h1 class="register">Register</h1>
-      <p class="heading">
-        Create your account. It's free and only takes a minute.
-      </p>
-    </article>
-  </header>
-  <form class="main-form" action="/" method="get">
+    <article class="article">
+        <h2 class="heading">
+          <span class="wrapper-register">Register</span>
+        </h2>
+        <p class="text-header">
+          Create your account. It's free and only takes a minute.
+        </p>
+  <form class="main-form" action="#" method="GET">
     <div class="username">
-      <label for="first-name"></label>
-      <input required 
-      id="first-name" 
+      <input 
+      class="input div-input"
+      required 
+      name="first-name" 
       type="text" 
       placeholder="First Name"
       autofocus 
       pattern="^[A-Z][a-z]{1,32}$"
       autocomplete="" />
-      <label for="last-name"></label>
-      <input required 
-      id="last-name" 
+      <input 
+      class="input div-input"
+      required 
+      name="last-name" 
       type="text" 
       placeholder="Last Name"
       autofocus 
       pattern="^[A-Z][a-z]{1,32}$"
       autocomplete="" />
     </div>
-    <div class="user-data">
-      <label for="email"></label>
-        <input required
-        id="email" 
-        type="email"
-        placeholder="Email"
-        pattern="^[a-zA-Z0-9]{1,16}@[a-z]{1,9}\.[a-z]{1,6}$"
-        autocomplete="" 
-        />
-      <label for="password"></label>
-        <input 
-        required 
-        id="password" 
-        type="password"
-        placeholder="Password"
-        pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,32}"
-        />
-      <label for="confirm-password"></label>
-        <input 
-        required 
-        id="confirm-password" 
-        type="confirm-password"
-        placeholder="Confirm Password"
-        pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,32}"
-        />
-    </div>
-    <label for="">
+    <input
+     class="input"
+     required
+     name="email" 
+     type="email"
+     placeholder="Email"
+     pattern="^[a-zA-Z0-9]{1,16}@[a-z]{1,9}\.[a-z]{1,6}$"
+     autocomplete="" 
+     />
+     <input 
+     class="input"
+     required 
+     name="password" 
+     type="password"
+     placeholder="Password"
+     pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,32}"
+     />
+     <input 
+     class="input"
+     required 
+     name="confirm-password" 
+     type="confirm-password"
+     placeholder="Confirm Password"
+     pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{6,32}"
+     />
+     <div class="conteiner-checbox">
       <input 
+      class="input checkbox"
       type="checkbox" 
-      name="isAccept" />I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>.
-    </label>
-    <br>
-    <button class="btn" type="register-now">Register Now</button>
+      name="checkbox" 
+      required
+      />
+      <span class="wrapper-text-checkbox">
+        I accept the <a class="link" href="#">Terms of Use</a> & <a class="link" href="#">Privacy Policy</a>.
+      </span>
+     </div>
+    <button class="btn" type="submit">Register Now</button>
   </form>
+  </article>
 </body>
 </html

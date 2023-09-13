@@ -1,47 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-.main-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  min-width: 300px;
+.article {
+  font-family: sans-serif;
+  max-width: 450px;
   padding: 20px;
   margin: 0 auto;
+  margin-top: 50px;
+  background: rgb(244, 240, 240);
+  opacity: 0.6;
 }
 
-.username {
-  display: flex;
-  max-width: 150px;
-  min-width: 150px;
-}
-
-.user-data {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  min-width: 150px;
-}
-
-.register {
+.heading {
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.register::before,
-.register::after {
-  content: '';
-  flex-grow: 1;
-  border: 1px solid black;
+.wrapper-register {
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
-.register::after {
+.text-header {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.heading::before,
+.heading::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: grey;
+  /* border: 1px solid black; */
+}
+
+.heading::after {
   margin-left: 10px;
 }
 
-.register::before {
+.heading::before {
   margin-right: 10px;
 }
 
-.heading {
-  text-align: center;
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-input {
+  width: 45%;
+}
+
+.input,
+.btn {
+  margin: 10px 0;
+  padding: 10px; 
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  border: none;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+}
+
+.conteiner-checbox {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-text-checkbox {
+  margin-left: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(50, 150, 68);
 }
